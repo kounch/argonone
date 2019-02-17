@@ -1,7 +1,7 @@
 # Maintainer: kounch (https://github.com/kounch)
 
 pkgname=argonone
-pkgver=20190215
+pkgver=20190217
 pkgrel=1
 pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
@@ -21,9 +21,9 @@ source=(
 
 sha256sums=(
   "41831f2796691322131061a23a2c61b01d9d124416854963a2ba9c47a72d0850"
-  "daaf7b6ce75db36e8ba6c48f51d3e45d296febf852cce6d469aeab1f054af59d"
+  "e5f8fa9cfeee93790654f90a70b3cb7df9fa1a760fb4f3b042c731cd9cc40f74"
   "f6f82283a286c9694a5adc6db842fca2e75845f1ccf0bacfb7ce2efa3c8eaec3"
-  "56bbefdebdd7a56a3dae2bf4d137bf79ced6eb72be4f2fc5dec98d6d028e19ca"
+  "dfa5dc21b5b474efe6f2b2acc105e7052aad1bfab6066a7318e17f5016468815"
   "1db1bc647690db29339ef4317b10738fe7fdbc379aad2149c9d0d353c42a3db4"
 )
 
