@@ -7,7 +7,7 @@ This Arch Linux Package installs all needed scripts and services and configures 
  1. Clone the repository or just download [PKGBUILD](https://raw.githubusercontent.com/kounch/argonone/master/PKGBUILD) and [argonone.install](https://raw.githubusercontent.com/kounch/argonone/master/argonone.install) files
  2. ```makepkg --install```
 
-## What does this do?
+## What this package installer does
 
 These are the steps that the installation takes
 
