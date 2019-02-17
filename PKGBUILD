@@ -5,7 +5,7 @@ pkgver=20190215
 pkgrel=1
 pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
-url='https://download.argon40.com/argon1.sh '
+url='https://download.argon40.com/argon1.sh'
 license=('GPL3')
 depends=('i2c-tools' 'lm_sensors' 'python>=3.3')
 provides=('argonone')
