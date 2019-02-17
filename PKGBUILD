@@ -19,7 +19,7 @@ source=(
   "https://raw.githubusercontent.com/kounch/argonone/master/argononed.service"
   )
 
-sha256sums (
+sha256sums=(
   "41831f2796691322131061a23a2c61b01d9d124416854963a2ba9c47a72d0850"
   "daaf7b6ce75db36e8ba6c48f51d3e45d296febf852cce6d469aeab1f054af59d"
   "f6f82283a286c9694a5adc6db842fca2e75845f1ccf0bacfb7ce2efa3c8eaec3"
