@@ -1,6 +1,6 @@
 # ArgonOne
 
-This Arch Linux Package installs all nededed scripts an services and configures a Raspberry Pi 3B/3B+ for [Argon ONE Mini Computer Case](https://www.argon40.com/argon1.html).
+This Arch Linux Package installs all needed scripts and services and configures a Raspberry Pi 3B/3B+ for [Argon ONE Mini Computer Case](https://www.argon40.com/argon1.html).
 
 These are the steps that the installation takes
 
@@ -30,7 +30,7 @@ i2c-bcm2835
 
 You must reboot for these changes to take effect.
 
-## Virtualenv Configuration
+## Virtual Environment Configuration
 
 Create a new Python virtual environment (version 3.3 or higher):
 
