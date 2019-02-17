@@ -2,9 +2,16 @@
 
 This Arch Linux Package installs all needed scripts and services and configures a Raspberry Pi 3B/3B+ for [Argon ONE Mini Computer Case](https://www.argon40.com/argon1.html).
 
+## How to use
+
+ 1. Clone the repository or just download [PKGBUILD](https://raw.githubusercontent.com/kounch/argonone/master/PKGBUILD) and [argonone.install](https://raw.githubusercontent.com/kounch/argonone/master/argonone.install) files
+ 2. ```makepkg --install```
+
+## What does this do?
+
 These are the steps that the installation takes
 
-## Packages needed
+### Packages needed
 
 Install:
 
@@ -12,7 +19,7 @@ Install:
 pacman -S --needed i2c-tools lm_sensors
 ```
 
-## System Configuration
+### System Configuration
 
 Edit ```/boot/config.txt``` and add (if needed):
 
@@ -30,7 +37,7 @@ i2c-bcm2835
 
 You must reboot for these changes to take effect.
 
-## Virtual Environment Configuration
+### Virtual Environment Configuration
 
 Create a new Python virtual environment (version 3.3 or higher):
 
@@ -41,9 +48,9 @@ pip install pysmbus RPi.GPIO
 deactivate
 ```
 
-## Files
+### Files
 
-### Config Script
+#### Config Script
 
 Create and then add permissions:
 
@@ -51,7 +58,7 @@ Create and then add permissions:
 chmod 755 /usr/bin/argonone-config
 ```
 
-## Shutdown Script
+### Shutdown Script
 
 Create and then add permissions:
 
@@ -59,7 +66,7 @@ Create and then add permissions:
 chmod 755 /lib/systemd/system-shutdown/argononed-poweroff.py
 ```
 
-### Daemon Config File
+#### Daemon Config File
 
 Create and then add permissions:
 
@@ -67,7 +74,7 @@ Create and then add permissions:
 chmod 666 /etc/argononed.conf
 ```
 
-## Power Button Script
+### Power Button Script
 
 Create and then add permissions:
 
@@ -75,7 +82,7 @@ Create and then add permissions:
 chmod 755 /opt/argonone/bin/argononed.py
 ```
 
-## Daemon Fan Service
+### Daemon Fan Service
 
 Create and then add permissions:
 
