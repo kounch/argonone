@@ -1,7 +1,7 @@
 # Maintainer: kounch (https://github.com/kounch)
 
-pkgname=argonone
-pkgver=20190217
+pkgname=argonone-rpi4
+pkgver=20191209
 pkgrel=1
 pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
@@ -12,11 +12,11 @@ provides=('argonone')
 install=argonone.install
 
 source=(
-  "https://raw.githubusercontent.com/kounch/argonone/master/argonone-config"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed-poweroff.py"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed.conf"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed.py"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed.service"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argonone-config"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed-poweroff.py"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.conf"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.py"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.service"
   )
 
 sha256sums=(
