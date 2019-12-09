@@ -13,4 +13,4 @@ Enable it before reboot:
 systemctl enable argononed.service
 ```
 
-## This repo will be destroy if kounch patched his repo for Raspberry Pi 4, don't want to fork, just helping users wants to have a ready to use solution
+## This repo will be destroy if kounch patch his repo for Raspberry Pi 4, don't want to fork, just helping users wants to have a ready to use solution
