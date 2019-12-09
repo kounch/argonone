@@ -1,6 +1,6 @@
 pre_install() {
   echo "Checking Hardware Model..."
-  if grep "Raspberry Pi 3" /proc/device-tree/model ; then
+  if grep "Raspberry Pi 4" /proc/device-tree/model ; then
     echo "Building New Virtual Environment in /opt/argonone..."
     python -m venv --clear /opt/argonone
     /opt/argonone/bin/python3 -m pip install pysmbus RPi.GPIO
@@ -25,11 +25,11 @@ pre_install() {
     if ! grep "i2c-dev" "${MODULE_CFG}" >/dev/null 2>&1 ; then
       echo "i2c-dev" >> "${MODULE_CFG}"
     fi
-    if ! grep "i2c-bcm2835" "${MODULE_CFG}" >/dev/null 2>&1 ; then
-      echo "i2c-bcm2835" >> "${MODULE_CFG}"
+    if ! grep "i2c-bcm2708" "${MODULE_CFG}" >/dev/null 2>&1 ; then
+      echo "i2c-bcm2708" >> "${MODULE_CFG}"
     fi
   else
-    echo "Not a Raspberry Pi Model 3!"
+    echo "Not a Raspberry Pi Model 4!"
     /usr/bin/false
   fi
 }
@@ -38,6 +38,9 @@ post_install() {
   echo "Please reboot before first use."
   echo "Configuration file: /etc/argononed.conf"
   echo "Enable power button and fan control service with: sudo systemctl enable argononed.service"
+  echo "If you want to: enable_uart=1"
+  echo "Put it in /boot/config.txt and remove kgdboc=ttyAMA0,115200 in /boot/cmdline"
+  echo "Thanks to thegeek1977 to help patching this"
 }
 
 pre_remove() {
