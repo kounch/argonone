@@ -1,4 +1,5 @@
-# Maintainer: kounch (https://github.com/kounch)
+# Maintainer: Elrondo46 (https://github.com/Elrondo46)
+# Contributor: kounch (https://github.com/kounch)
 
 pkgname=argonone-rpi4
 pkgver=20191209
