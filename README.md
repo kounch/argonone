@@ -15,4 +15,4 @@ systemctl enable argononed.service
 
 ## This repo will be destroy if kounch patch his repo for Raspberry Pi 4, don't want to fork, just helping users wants to have a ready to use solution
 
-## Thanks to thegeek1977 to help patching this
+## Thanks to thegeek1977 and the community to help patching this
