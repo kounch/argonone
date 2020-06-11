@@ -17,7 +17,7 @@ else:
     bus = smbus.SMBus(0)
 
 if len(sys.argv) > 1:
-    bus.write_byte(0x1a, 0)
+    bus.write_byte_data(0x1a,0,0)
     if sys.argv[1] == "poweroff" or sys.argv[1] == "halt":
         try:
             bus.write_byte_data(0x1a,0,0xFF)
