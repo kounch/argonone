@@ -22,6 +22,4 @@ Please note: AUR is maintained by **[tonnyfettes](https://aur.archlinux.org/acco
 systemctl enable argononed.service
 ```
 
-## This repo will be destroyed if kounch patch his repo for Raspberry Pi 4, I don't want to fork, I'm just helping users wants to have a ready to use solution.
-
-## Thanks to thegeek1977 and the community for helping to patch this repo.
+## Thanks to Elrondo, thegeek1977 and the community for helping to patch this branch.
