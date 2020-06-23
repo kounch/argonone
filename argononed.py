@@ -101,7 +101,7 @@ def temp_check():
             time.sleep(30)
         prevblock = block
         try:
-            bus.write_byte(address, block)
+            bus.write_byte_data(address,0,block)
         except IOError:
             temp = ""
         time.sleep(30)

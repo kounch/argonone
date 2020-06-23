@@ -1,29 +1,30 @@
-# Maintainer: kounch (https://github.com/kounch)
+# Maintainer: Elrondo46 (https://github.com/Elrondo46)
+# Contributor: kounch (https://github.com/kounch)
 
-pkgname=argonone
-pkgver=20190217
+pkgname=argonone-rpi4
+pkgver=20191209
 pkgrel=1
 pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
 url='https://download.argon40.com/argon1.sh'
 license=('GPL3')
-depends=('i2c-tools' 'lm_sensors' 'python>=3.3')
+depends=('i2c-tools' 'libffi' 'lm_sensors' 'python>=3.3')
 provides=('argonone')
 install=argonone.install
 
 source=(
-  "https://raw.githubusercontent.com/kounch/argonone/master/argonone-config"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed-poweroff.py"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed.conf"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed.py"
-  "https://raw.githubusercontent.com/kounch/argonone/master/argononed.service"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argonone-config"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed-poweroff.py"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.conf"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.py"
+  "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.service"
   )
 
 sha256sums=(
   "41831f2796691322131061a23a2c61b01d9d124416854963a2ba9c47a72d0850"
-  "e5f8fa9cfeee93790654f90a70b3cb7df9fa1a760fb4f3b042c731cd9cc40f74"
+  "a8ecb1a581bbc8b1d705b63797d5521cac92f87a53d087eb148de877957abc55"
   "f6f82283a286c9694a5adc6db842fca2e75845f1ccf0bacfb7ce2efa3c8eaec3"
-  "dfa5dc21b5b474efe6f2b2acc105e7052aad1bfab6066a7318e17f5016468815"
+  "6a82dd456f02ec5f2de4dc9974eed847670247c9dbf120124acfa6c0b6e5713f"
   "1db1bc647690db29339ef4317b10738fe7fdbc379aad2149c9d0d353c42a3db4"
 )
 
