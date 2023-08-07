@@ -1,5 +1,7 @@
 # ArgonOne
 
+*** THIS CODE IS ARCHIVED AND NO LONGER MAINTAINED ***
+
 This Arch Linux Package installs all needed scripts and services and configures a Raspberry Pi 3B/3B+ for [Argon ONE Mini Computer Case](https://www.argon40.com/argon1.html). Raspberry Pi 4B is also supported, but you need use a different [branch](https://github.com/kounch/argonone/tree/feature/RaspberryPi4), which has been patched just for this SBC (scroll down to check out notes).
 
 ## Raspberry Pi 3B/3B+ notes
